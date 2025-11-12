@@ -7,11 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1eWVSZglgPtdbeNkn5DF7j8Rke2zSTS_g
 """
 
-# 讀取輸入的成績字串
-grades = input().split()
-
-# 將字串轉換為整數，並計算不及格的數量
-fail_count = sum(1 for grade in grades if int(grade) < 60)
-
-# 輸出不及格的數量
-print(fail_count)
+Score = input().split()
+countF = 0
+for i in Score:
+    if int(i) < 60:
+        countF += 1
+print("不及格人数：", countF)
